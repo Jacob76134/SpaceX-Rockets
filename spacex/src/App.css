@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: 'League Spartan', sans-serif;
+}
+
+nav {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+/* HERO STYLES */
+.hero {
+  background-image: url('../public/heroimg.png');
+  width: 100%;
+  height: 700px;
+  background-position: 0% 10%;
+  color: white;
+}
+
+.hero svg {
+  width: 400px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, .3);
+  width: 630px;
+  padding-left: 45px;
+  border-radius: 3px;
+}
+
+.about-title {
+  font-weight: 500;
+}
+
+.about-body {
+  width: 600px;
+  font-size: 20px;
+}
+
+/* ROCKET SECTION STYLES */
+
+
+.rocket-section-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.rocket-section-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.rocket-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CARD STYLES */
+.rocket-card {
+  width: 300px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, .18);
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.rocket-card img {
+  width: 300px;
+  height: 380px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  height: 380px;
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+}
+
+.info-button a{
+  display: flex;
+  align-items: center;
+  width: 132px;
+  transition: all ease-in 400ms;
+  color: white;
+  text-decoration: none;
+}
+
+.info-button a:hover {
+  cursor: pointer;
+  color:rgb(233, 233, 233);
+}
+
+.info-button svg {
+  height: 1em;
+}
+
+/* MODAL STYLES */
+
+.modal-top{
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column;
+}
+
+.modal-top img {
+  height: 300px;
+  border-radius: 3px;
+}
+
+.data-display {
+  display: flex;
+}
+
+.data-display ul {
+  list-style: none;
+  padding: left;
+}
+.data-display li {
+  padding-top: .8em;
+}
+
+.data-display a {
+  color: black;
+}
+
+.data-display h2 {
+  margin-top: 0;
+}
+
+.description-title {
+  display: flex;
+  align-items: center;
+}
+
+.description-title h2 {
+  margin: 0;
+}
+
+.description-title svg {
+  margin-left: 1em;
+}
+
+.left-container {
+  padding-top: 1em;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  margin-top: 8rem;
+}
+
+.footer-content{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content svg {
+  width: 300px;
+  height: 50px;
+}
+
+.footer-content ul {
+  width: 300px;
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+}
