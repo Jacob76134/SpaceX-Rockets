@@ -32,6 +32,8 @@ const { ApolloServerPluginDrainHttpServer } = require('apollo-server-core');
 const express = require('express');
 const http = require('http');
 const {typeDefs, resolvers} = require('./schemas')
+const PORT = process.env.PORT || 4000
+
 
 async function startApolloServer(typeDefs, resolvers) {
 
@@ -47,12 +49,19 @@ async function startApolloServer(typeDefs, resolvers) {
 
   server.applyMiddleware({ app });
 
-  await new Promise(resolve => httpServer.listen({ port: 4000 }, resolve));
+  await new Promise(resolve => httpServer.listen({ PORT }, resolve));
 
   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
 }
+const path = require("path");
+
 
 const app = express();
 startApolloServer(typeDefs, resolvers);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(express.static(path.resolve(__dirname, "./spacex/build")));
+// app.get("*", function (request, response) {
+//   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+// });
