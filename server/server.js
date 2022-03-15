@@ -62,6 +62,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static(path.resolve(__dirname, "build")));
-app.get("/", function (request, response) {
+app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "build", "index.html"));
 });
