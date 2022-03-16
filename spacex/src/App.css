@@ -201,7 +201,7 @@ footer {
 
   @media only screen and (max-width: 1550px) {
     .rocket-container {
-      flex-direction: column;
+      flex-wrap:wrap;
       justify-content: space-between;
       height: 1500px;
     }
@@ -209,4 +209,12 @@ footer {
       flex-direction: column;
     }
 
+  }
+
+  @media only screen and (max-width: 920px) {
+    .rocket-container {
+      flex-wrap:none;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
