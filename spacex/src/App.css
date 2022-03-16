@@ -35,7 +35,7 @@ nav {
 
 .about-content {
   background-color: rgba(0, 0, 0, .3);
-  width: 630px;
+  max-width: 630px;
   padding-left: 45px;
   border-radius: 3px;
 }
@@ -45,7 +45,7 @@ nav {
 }
 
 .about-body {
-  width: 600px;
+  max-width: 600px;
   font-size: 20px;
 }
 
@@ -195,3 +195,18 @@ footer {
   justify-content: space-around;
   padding-top: 1em;
 }
+
+/* MEDIA QUERIES */
+
+
+  @media only screen and (max-width: 1550px) {
+    .rocket-container {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1500px;
+    }
+    .data-display {
+      flex-direction: column;
+    }
+
+  }
